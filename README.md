@@ -1,7 +1,7 @@
 # TheMovieDatabase
 
 - Nama Aplikasi : The Movie Database
-- Link APK : https://drive.google.com/open?id=0BxelwmeHfm14RzJQXzF6SUphSUk
+- Link APK : https://drive.google.com/open?id=0BxelwmeHfm14cl9zRzVHRlZoY1U
 - Identitas :
   
   A. Nama Lengkap : Alif Akbar Rahmat Mauludi
@@ -26,8 +26,8 @@
   
 - Screen Shoot :
 
-![Alt text](https://docs.google.com/uc?id=0BxelwmeHfm14YjMtVm1lc21lUmM)
-![Alt text](https://docs.google.com/uc?id=0BxelwmeHfm14SGdCbmRjS3Exb0E)
+![Alt text](https://docs.google.com/uc?id=0BxelwmeHfm14MksxOThZSzV0cnM)
+![Alt text](https://docs.google.com/uc?id=0BxelwmeHfm14SkpNS0RtakNTaXM)
 ![Alt text](https://docs.google.com/uc?id=0BxelwmeHfm14R1UyRnQzYTNjLXc)
 ![Alt text](https://docs.google.com/uc?id=0BxelwmeHfm14YnRZaDNFaV9Bb0U)
 ![Alt text](https://docs.google.com/uc?id=0BxelwmeHfm14aTV0TEdlaVh0TDQ)
