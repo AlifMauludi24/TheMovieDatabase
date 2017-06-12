@@ -1,8 +1,6 @@
 package id.sch.smktelkom_mlg.privateassignment.xirpl202.themoviedatabase;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -11,13 +9,12 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import id.sch.smktelkom_mlg.privateassignment.xirpl202.themoviedatabase.fragment.NowFragment;
+import id.sch.smktelkom_mlg.privateassignment.xirpl202.themoviedatabase.fragment.SavedFragment;
 import id.sch.smktelkom_mlg.privateassignment.xirpl202.themoviedatabase.fragment.SoonFragment;
 import id.sch.smktelkom_mlg.privateassignment.xirpl202.themoviedatabase.fragment.TopRatedFragment;
 
@@ -57,39 +54,8 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     /**
      * A placeholder fragment containing a simple view.
@@ -147,6 +113,9 @@ public class MainActivity extends AppCompatActivity {
             } else if (position == 2) {
                 setTheme(R.style.AppTheme);
                 return new TopRatedFragment();
+            } else if (position == 3) {
+                setTheme(R.style.AppTheme);
+                return new SavedFragment();
             } else {
                 return PlaceholderFragment.newInstance(position + 1);
             }
@@ -155,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 4;
         }
 
         @Override
@@ -167,6 +136,8 @@ public class MainActivity extends AppCompatActivity {
                     return "Coming Soon";
                 case 2:
                     return "Top Rated";
+                case 3:
+                    return "Saved";
             }
             return null;
         }
